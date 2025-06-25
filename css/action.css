@@ -1,0 +1,558 @@
+body {
+    background-color: #fff;
+    font-family: "Yuji Mai", serif;
+    color: #fff;
+    position: relative;
+}
+
+.white {
+    width: 100%;
+    height: 3165px;
+    position: absolute;
+    z-index: 2000;
+    opacity: 1;
+    transition: ease-in-out 2.3s;
+}
+
+.shat {
+    opacity: 0;
+}
+
+p {
+    font-weight: 900;
+}
+
+/* ハンバーガー */
+#navi {
+    color: #000;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255,255,255,1);
+    height: 80px;
+    padding: 25px;
+    line-height: 100px;
+    z-index: 100;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+}
+
+header .navi_btn {
+    width: 50px;
+    height: 50px;
+    background-image: url(../top/img/menu.png);
+    background-size: 100%;
+    position: fixed;
+    right: 25px;
+    top: 10px;
+    z-index: 2100;
+}
+
+#navi .txt {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    top: -10px;
+    right: 220px;
+    z-index: 200;
+}
+
+#navi .txt li:hover {
+    color: #FF2C96;
+    transition: 0.5s;
+}
+
+#navi .txt p {
+    font-size: 18px;
+}
+
+
+.open {
+    opacity: 1
+    !important;
+}
+
+.close {
+    background-image: url(../top/img/close.png)
+    !important;
+}
+
+#bg {
+    transition: 0.6s ease-in;
+}
+
+.bg_01 {
+    background-image: url(../action/img/back2.png) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.bg_02 {
+    background-image: url(../action/img/world.png) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* ファーストビュー */
+#first {
+    background-image: url(../action/img/first.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+}
+
+.inner-wrap {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#first .inner-wrap .txt {
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 270px;
+    text-shadow: 4px 4px 4px #000;
+}
+
+@keyframes slideIn_left {
+    0% {
+      transform: translateX(-180px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+    }
+    40%,100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideIn_right {
+    0% {
+      transform: translateX(180px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+    }
+    40%,100% {
+      opacity: 1;
+    }
+  }
+
+.ani_left {
+    animation: slideIn_left 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.ani_right {
+    animation: slideIn_right 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+/* アクション */
+#action .inner-wrap .midasi .image .gold {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+#action .inner-wrap .midasi .image .red {
+    position: absolute;
+    width: 40%;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 93px;
+    z-index: 1;
+}
+
+.ac {
+    position: absolute;
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -98px;
+    z-index: 100;
+}
+
+#action .inner-wrap .txt .txt_ac1 {
+    color: #fff;
+    font-size: 37px;
+    font-weight: bolder;
+    line-height: 60px;
+    margin-top: 150px;
+    position: absolute;
+    opacity: 0;
+}
+
+
+
+#action .inner-wrap .txt .txt_ac2 {
+    color: #fff;
+    font-size: 37px;
+    font-weight: bolder;
+    line-height: 60px;
+    right: 0;
+    margin-top: 625px;
+    position: absolute;
+    opacity: 0;
+}
+
+#action .inner-wrap .move .action1 {
+    position: absolute;
+    width: 40%;
+    margin-top: 100px;
+    right: 50px;
+}
+
+#action .inner-wrap .move .mov1 {
+    position: absolute;
+    top: 168px;
+    right: -20px;
+}
+
+#action .inner-wrap .move .action2 {
+    width: 40%;
+    margin-top: 550px;
+    margin-left: 50px;
+}
+
+#action .inner-wrap .move .mov2 {
+    position: absolute;
+    top: 640px;
+    left: -20px;
+}
+
+/* 三種の武器 */
+.san {
+    position: absolute;
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -98px;
+    z-index: 100;
+}
+
+#weapon .inner-wrap .txt_weapon .txt_midasi {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+#weapon .inner-wrap .txt_weapon .txt_so {
+    font-size: 40px;
+    position: absolute;
+    top: 520px;
+    left: 190px;
+    font-weight: 900;
+}
+
+#weapon .inner-wrap .txt_weapon .txt_ma {
+    font-size: 40px;
+    position: absolute;
+    top: 520px;
+    left: 520px;
+    font-weight: 900;
+}
+
+#weapon .inner-wrap .txt_weapon .txt_ri {
+    font-size: 40px;
+    position: absolute;
+    top: 520px;
+    left: 810px;
+    font-weight: 900;
+}
+
+#weapon .inner-wrap .txt_weapon .txt_sword {
+    position: absolute;
+    font-size: 20px;
+    line-height: 30px;
+    top: 858px;
+    left: 145px;
+}
+
+#weapon .inner-wrap .txt_weapon .txt_magic {
+    position: absolute;
+    font-size: 20px;
+    line-height: 30px;
+    top: 870px;
+    left: 500px;
+}
+
+#weapon .inner-wrap .txt_weapon .txt_rifle {
+    position: absolute;
+    font-size: 20px;
+    line-height: 30px;
+    top: 858px;
+    left: 850px;
+}
+
+.chenge {
+    color: #fff;
+}
+
+#weapon .inner-wrap .image .back  {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+}
+
+#weapon .inner-wrap .image .hontai .sword {
+    position: absolute;
+    top: 360px;
+}
+
+#weapon .inner-wrap .image .hontai .magic {
+    position: absolute;
+    top: 305px;
+    left: 180px;
+}
+
+#weapon .inner-wrap .image .hontai .rifle {
+    position: absolute;
+    top: 490px;
+    right: 20px;
+}
+
+#weapon .inner-wrap .image .massyu .kino1 {
+    position: absolute;
+    top: 770px;
+    left: 80px;
+}
+
+#weapon .inner-wrap .image .massyu .kino2 {
+    position: absolute;
+    top: 770px;
+    left: 430px;
+}
+
+#weapon .inner-wrap .image .massyu .kino3 {
+    position: absolute;
+    top: 770px;
+    right: 305px;
+}
+
+
+#sub .inner-wrap .midasi .img .red1 {
+    position: absolute;
+    width: 40%;
+    display: block;
+    margin-left: 30px;
+    top: 93px;
+    z-index: 1;
+}
+
+#sub .inner-wrap .midasi .img .red2 {
+    position: absolute;
+    width: 40%;
+    display: block;
+    margin-left: 670px;
+    top: 600px;
+    z-index: 1;
+}
+
+.rogu {
+    position: absolute;
+    font-size: 40px;
+    margin-left: 800px;
+    font-weight: bold;
+    top: 610px;
+    z-index: 1;
+}
+
+.huyu {
+    position: absolute;
+    font-size: 40px;
+    top: 105px;
+    left: 185px;
+    font-weight: bold;
+    z-index: 200;
+}
+
+.sub_txt {
+    color: #FFF;
+    font-size: 35px;
+    font-weight: bolder;
+    line-height: 55px;
+    margin-top: 200px;
+    margin-left: 30px;
+    position: absolute;
+    opacity: 0;
+}
+
+.like_txt {
+    color: #FFf;
+    font-size: 35px;
+    font-weight: bolder;
+    line-height: 55px;
+    margin-top: 700px;
+    margin-left: 640px;
+    position: absolute;
+    opacity: 0;
+}
+
+.sub_img {
+    width: 50%;
+    margin-left: 600px;
+    padding-top: 110px;
+}
+
+.like_img {
+    width: 50%;
+    margin-left: -20px;
+    padding-top: 150px;
+    margin-bottom: 150px;
+}
+
+.efect {
+    position: absolute;
+    top: 1000px;
+    left: 500px;
+    width: 10px;
+    z-index: 200;
+}
+
+.efecton {
+    animation: kakudai 0.2s linear 1;
+}
+
+@keyframes kakudai {
+    to{
+        transform: scale(500);
+    }
+}
+
+/* フッター */
+.hutta {
+    background-image: url(../top/img/hutta_back.png),url(../top/img/hutta_kuro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+
+li {
+    font-size: 26px;
+}
+
+.T {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.T:hover {
+    color: #2D47DC;
+}
+
+.A {
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.A:hover {
+    color: #2D47DC;
+}
+
+.C {
+    position: absolute;
+    top: 100px;
+    left: 550px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.C:hover {
+    color: #2D47DC;
+}
+
+.M {
+    position: absolute;
+    top: 100px;
+    left: 780px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.M:hover {
+    color: #2D47DC;
+}
+
+.P {
+    position: absolute;
+    top: 100px;
+    left: 1000px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.P:hover {
+    color: #2D47DC;
+}
+
+.B {
+    position: absolute;
+    top: 300px;
+    left: 480px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.B:hover {
+    color: #2D47DC;
+}
+
+.S {
+    position: absolute;
+    top: 240px;
+    left: 780px;
+}
+
+.discode {
+    width: 6%;
+    position: absolute;
+    top: 280px;
+    left: 830px;
+    z-index: 1000;
+}
+
+.x {
+    position: absolute;
+    top: 280px;
+    left: 940px;
+    z-index: 1000;
+}
+
+.title2 {
+    width: 380px;
+    position: absolute;
+    top: 160px;
+    left: 120px;
+}
+
+.on {
+    opacity: 1 !important;
+}
+
+.off {
+    opacity: 0 !important;
+}

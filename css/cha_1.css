@@ -1,0 +1,329 @@
+
+body {
+    color: #fff;
+    font-family: "Yuji Mai", serif;
+    font-weight: 700;
+    position: relative;
+    background-image: url(../top/img/back2.png) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 2000px;
+}
+   
+#navi {
+    color: #000;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255,255,255,1);
+    height: 80px;
+    padding: 25px;
+    line-height: 100px;
+    z-index: 100;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+}
+
+header .navi_btn {
+    width: 50px;
+    height: 50px;
+    background-image: url(../top/img/menu.png);
+    background-size: 100%;
+    position: fixed;
+    right: 25px;
+    top: 10px;
+    z-index: 2100;
+}
+
+#navi .txt {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    top: -10px;
+    right: 220px;
+    z-index: 200;
+}
+
+#navi .txt li:hover {
+    color: #FF2C96;
+    transition: 0.5s;
+}
+
+#navi .txt p {
+    font-size: 18px;
+}
+
+
+.open {
+    opacity: 1
+    !important;
+}
+
+.close {
+    background-image: url(../top/img/close.png)
+    !important;
+}
+
+.shat {
+    opacity: 0;
+}
+
+.stop {
+    overflow: hidden;
+}
+
+.inner-wrap {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#first .inner-wrap .txt {
+    font-family: "Volkhov", serif;
+    font-weight: 900;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 170px;
+}
+
+/* メイン */
+.white {
+    width: 100%;
+    height: 2000px;
+    position: absolute;
+    z-index: 2000;
+    opacity: 1;
+    transition: ease-in-out 2.3s;
+}
+
+.white_back .white.shat {
+    opacity: 0;
+}
+
+.gold {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+    margin-top: 300px;
+}
+
+.hontai{
+    position: absolute;
+    width: 90%;
+    top: 100px;
+    left: -25px;
+}
+
+.bana_1 {
+    width: 10%;
+    position: absolute;
+    top: 100px;
+    left: 31px;
+}
+
+.bana_2 {
+    width: 10%;
+    position: absolute;
+    top: 195px;
+    left: -100px;
+}
+
+.txt_rasu {
+    font-size: 84px;
+    color: #FF2C96;
+    position: absolute;
+    top: 302px;
+    right: -100px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 25px 55px;
+}
+
+.txt_cv {
+    font-size: 48px;
+    position: absolute;
+    top: 500px;
+    right: 263px;
+}
+
+.scyo1 {
+    position: absolute;
+    top: 630px;
+    right: -100px;
+    z-index: 10;
+}
+
+.scyo2 {
+    position: absolute;
+    top: 768px;
+    right: 82px;
+    z-index: 1;
+}
+
+.txt_hon p {
+    color: #000;
+    font-family: "Sawarabi Gothic", serif;
+    font-size: 21.6px;
+    font-weight: 100;
+    line-height: 40px;
+    position: absolute;
+    top: 1045px;
+    right: -105px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 15px;
+}
+
+.img_sentaku ul {
+    position: absolute;
+    width: 500px;
+    display: flex;
+    gap: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 1500px;
+    z-index: 100;
+}
+
+.btn_back h2{
+    position: absolute;
+    font-size: 48px;
+    top: 1680px;
+    left: 515px;
+    transition: ease-in-out 0.5s;
+    z-index: 100;
+}
+
+.btn_back:hover {
+    color: #2D47DC;
+}
+
+/* フッター */
+.hutta {
+    background-image: url(../top/img/hutta_back.png),url(../top/img/hutta_kuro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    margin-top: 1800px;
+}
+
+li {
+    font-size: 26px;
+}
+
+.T {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.T:hover {
+    color: #2D47DC;
+}
+
+.A {
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.A:hover {
+    color: #2D47DC;
+}
+
+.C {
+    position: absolute;
+    top: 100px;
+    left: 550px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.C:hover {
+    color: #2D47DC;
+}
+
+.M {
+    position: absolute;
+    top: 100px;
+    left: 780px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.M:hover {
+    color: #2D47DC;
+}
+
+.P {
+    position: absolute;
+    top: 100px;
+    left: 1000px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.P:hover {
+    color: #2D47DC;
+}
+
+.B {
+    position: absolute;
+    top: 300px;
+    left: 480px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.B:hover {
+    color: #2D47DC;
+}
+
+.S {
+    position: absolute;
+    top: 240px;
+    left: 780px;
+}
+
+.discode {
+    width: 6%;
+    position: absolute;
+    top: 280px;
+    left: 830px;
+    z-index: 1000;
+}
+
+.x {
+    position: absolute;
+    top: 280px;
+    left: 940px;
+    z-index: 1000;
+}
+
+.title2 {
+    width: 380px;
+    position: absolute;
+    top: 160px;
+    left: 120px;
+}
+
+.on {
+    opacity: 1 !important;
+}
+
+.off {
+    opacity: 0 !important;
+}

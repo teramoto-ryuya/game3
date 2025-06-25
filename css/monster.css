@@ -1,0 +1,424 @@
+body {
+    background-color: #E9F7FF;
+    opacity: 1;
+    font-family: "Yuji Mai", serif;
+    color: #fff;
+    position: relative;
+}
+
+#navi {
+    color: #000;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255,255,255,1);
+    height: 80px;
+    padding: 25px;
+    line-height: 100px;
+    z-index: 1000;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+}
+
+header .navi_btn {
+    width: 50px;
+    height: 50px;
+    background-image: url(../top/img/menu.png);
+    background-size: 100%;
+    position: fixed;
+    right: 25px;
+    top: 10px;
+    z-index: 2100;
+}
+
+#navi .txt {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    top: -10px;
+    right: 220px;
+    z-index: 200;
+}
+
+#navi .txt li:hover {
+    color: #FF2C96;
+    transition: 0.5s;
+}
+
+#navi .txt p {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+
+.open {
+    opacity: 1
+    !important;
+}
+
+.close {
+    background-image: url(../top/img/close.png)
+    !important;
+}
+
+.stop {
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.inner-wrap {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* メイン */
+#first {
+    background-image: url(../monster/img/samune.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+}
+
+.white {
+    width: 100%;
+    height: 3165px;
+    position: absolute;
+    z-index: 2000;
+    opacity: 1;
+    transition: ease-in-out 2.3s;
+}
+
+.white_back .white.shat {
+    opacity: 0;
+}
+
+.z-in {
+    z-index: 10;
+}
+
+h1 {
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 270px;
+    text-shadow: 4px 4px 4px #000;
+}
+
+#syosai {
+    background-image: url(../monster/img/world.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 3200px;
+    background-attachment: fixed;
+    position: absolute;
+}
+
+.back {
+    margin-left: 47px;
+    margin-top: 150px;
+}
+
+.syakai {
+    margin-top: -770px;
+}
+
+ul{
+    position: absolute;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 910px;
+    gap: 50px;
+    z-index: 700;
+}
+
+.mon li img {
+    filter:grayscale(100%);
+}
+
+.mon li img:hover {
+    filter:grayscale(0%);
+    transition: 0.3s;
+}
+
+.mon {
+    width: 910px;
+    gap: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.inner-wrap h2 {
+    width: 100%;
+    color: #fff;
+    font-weight: 400;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 80px;
+    text-align: center;
+    position: absolute;
+    top: -450px;
+    opacity: 0;
+    transition: ease-in-out 2s;
+}
+
+.inner-wrap h2.on {
+    opacity: 1;
+}
+
+.dai {
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    top: -120px;
+    left: 400px;
+}
+
+.dai h3 {
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sera {
+    margin-top: 100px;
+}
+
+.serafiras {
+    opacity: 1;
+}
+
+.hontai {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 1000px;
+    left: -295px;
+    opacity: 0;
+    transition:  1s ease-in 1s;
+}
+
+.war1 {
+    color: rgba(97, 7, 7, 0.3);
+    position: absolute;
+    font-size: 250px;
+    font-family: "Volkhov", serif;
+    left: 128px;
+    top: 1130px;
+    opacity: 0;
+    transition: 1s ease-in-out 2s;
+}
+
+.war2 {
+    color: #FA0707;
+    position: absolute;
+    font-size: 130px;
+    font-family: "Volkhov", serif;
+    font-weight: 500;
+    left: 475px;
+    top: 1155px;
+    opacity: 0;
+}
+
+.waron {
+    animation: war2 0.7s linear 3;
+    opacity: 1;
+}
+
+@keyframes war2 {
+    to{
+        transform: scale(3);
+    }
+}
+
+.sera_back {
+    position: absolute;
+    width: 30%;
+    left: 1000px;
+    top: 1450px;
+    opacity: 0;
+    transition: 2s ease-in-out 2s;
+}
+
+.sai {
+    position: absolute;
+    font-size: 20px;
+    line-height: 50px;
+    left: 1100px;
+    top: 1515px;
+    opacity: 0;
+    transition: 2s ease-in-out 3.5s;
+}
+
+.serafiras {
+    position: absolute;
+    width: 100%;
+    height: 1100px;
+    opacity: 0;
+}
+
+.hontai2 {
+    position: absolute;
+    width: 70%;
+    top: 2150px;
+    right: 140px;
+    opacity: 0;
+    transition:  1s ease-in 1s;
+}
+
+.sera_back2 {
+    position: absolute;
+    width: 30%;
+    top: 2400px;
+    right: 1000px;
+    opacity: 0;
+    transition: 2s ease-in-out 2s;
+}
+
+.sai2 {
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+    position: absolute;
+    top: 2460px;
+    left: 300px;
+    opacity: 0;
+    transition: 2s ease-in-out 3.5s;
+}
+
+.syokai li {
+    position: absolute;
+}
+
+/* フッター */
+.hutta {
+    background-image: url(../top/img/hutta_back.png),url(../top/img/hutta_kuro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    margin-top: 2560px;
+}
+
+li {
+    font-size: 26px;
+}
+
+.T {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.T:hover {
+    color: #2D47DC;
+}
+
+.A {
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.A:hover {
+    color: #2D47DC;
+}
+
+.C {
+    position: absolute;
+    top: 100px;
+    left: 550px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.C:hover {
+    color: #2D47DC;
+}
+
+.M {
+    position: absolute;
+    top: 100px;
+    left: 780px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.M:hover {
+    color: #2D47DC;
+}
+
+.P {
+    position: absolute;
+    top: 100px;
+    left: 1000px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.P:hover {
+    color: #2D47DC;
+}
+
+.B {
+    position: absolute;
+    top: 300px;
+    left: 480px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.B:hover {
+    color: #2D47DC;
+}
+
+.S {
+    position: absolute;
+    top: 240px;
+    left: 780px;
+}
+
+.discode {
+    width: 6%;
+    position: absolute;
+    top: 280px;
+    left: 830px;
+    z-index: 1000;
+}
+
+.x {
+    position: absolute;
+    top: 280px;
+    left: 940px;
+    z-index: 1000;
+}
+
+.title2 {
+    width: 380px;
+    position: absolute;
+    top: 160px;
+    left: 120px;
+}
+
+.on {
+    opacity: 1 !important;
+}
+
+.off {
+    opacity: 0 !important;
+}

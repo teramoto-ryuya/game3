@@ -1,0 +1,55 @@
+body {
+    color: #fff;
+    font-family: "Yuji Mai", serif;
+    font-weight: 700;
+    position: relative;
+    background-image: url(../top/img/back2.png) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 1500px;
+}
+
+.inner-wrap {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.haikei {
+    position: absolute;
+    width: 100%;
+    top: 400px;
+}
+
+.syuten {
+    position: absolute;
+    width: 80%;
+    top: 200px;
+    right: -100px;
+}
+
+.close_btn {
+    width: 10%;
+    margin-top: 70px;
+    margin-left: 1150px;
+}
+
+#txt {
+    position: absolute;
+    margin-left: -100px;
+    z-index: 100;
+}
+
+#txt h2 {
+    font-size: 120px;
+    margin-left: -10px;
+    padding-top: 550px;
+}
+
+#txt p {
+    font-size: 32px;
+    line-height: 60px;
+    margin-top: 90px;
+}

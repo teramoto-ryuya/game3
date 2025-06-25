@@ -1,0 +1,468 @@
+body {
+    background-color: #fff;
+    font-family: "Yuji Mai", serif;
+    color: #FFF;
+    position: relative;
+}
+
+.white {
+    width: 100%;
+    height: 2000px;
+    position: absolute;
+    z-index: 2000;
+    opacity: 1;
+    transition: ease-in-out 2.3s;
+}
+
+.shat {
+    opacity: 0;
+}
+
+.stop {
+    overflow: hidden;
+}
+
+/* ハンバーガー */
+#navi {
+    color: #000;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255,255,255,1);
+    height: 80px;
+    padding: 25px;
+    line-height: 100px;
+    z-index: 100;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+}
+
+header .navi_btn {
+    width: 50px;
+    height: 50px;
+    background-image: url(../top/img/menu.png);
+    background-size: 100%;
+    position: fixed;
+    right: 25px;
+    top: 10px;
+    z-index: 2100;
+}
+
+#navi .txt {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    top: -10px;
+    right: 220px;
+    z-index: 200;
+}
+
+#navi .txt li:hover {
+    color: #FF2C96;
+    transition: 0.5s;
+}
+
+#navi .txt p {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+
+.open {
+    opacity: 1
+    !important;
+}
+
+.close {
+    background-image: url(../top/img/close.png)
+    !important;
+}
+
+/* ファーストビュー */
+#first {
+    background-image: url(../products/img/mein.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+}
+
+#bg {
+    background-image: url(../top/img/back2.png) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 1500px;
+}
+
+.inner-wrap {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#first .inner-wrap .txt {
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 270px;
+    text-shadow: 4px 4px 4px #000;
+}
+
+#title .txt h1 {
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 900;
+    padding-top: 100px;
+}
+
+#title .img .gold {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 37px;
+}
+
+#title .img .kotorin {
+    width: 20%;
+    position: absolute;
+    left: 50px;
+    top: 0;
+}
+
+#title .img .kira {
+    width: 90%;
+    position: absolute;
+    left: 70px;
+    top: 190px;
+}
+
+#honbun {
+    margin-top: 50px;
+}
+
+#honbun .back .brown {
+    width: 100%;
+    margin: auto;
+    margin-top: 130px;
+}
+
+#honbun .txt {
+    font-size: 25px;
+}
+
+.txt1 {
+    position: absolute;
+    top: 550px;
+    left: 200px;
+    line-height: 40px;
+}
+
+.txt1_1 {
+    font-size: 16px;
+    position: absolute;
+    top: 590px;
+    left: 300px;
+}
+
+.txt1::after {
+    content: "";
+    width: 350px;
+    height: 2px;
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+}
+
+.txt2 {
+    position: absolute;
+    top: 650px;
+    left: 200px;
+    line-height: 40px;
+}
+
+.txt2_1 {
+    font-size: 16px;
+    position: absolute;
+    top: 730px;
+    left: 350px;
+    line-height: 25px;
+}
+
+.txt2::after {
+    content: "";
+    width: 350px;
+    height: 2px;
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    bottom: -75px;
+    left: 0;
+}
+
+.txt2::before {
+    content: "";
+    width: 350px;
+    height: 2px;
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    top: -120px;
+    left: 0;
+}
+
+.txt3 {
+    position: absolute;
+    top: 820px;
+    left: 200px;
+    line-height: 40px;
+}
+
+.txt3::after {
+    content: "";
+    width: 350px;
+    height: 2px;
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    bottom: -26px;
+    left: 0;
+}
+
+.txt4 {
+    position: absolute;
+    top: 570px;
+    left: 630px;
+}
+
+.txt4::after {
+    content: "";
+    width: 350px;
+    height: 2px;
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    bottom: -36px;
+    left: 0;
+}
+
+.txt4::before {
+    content: "";
+    width: 350px;
+    height: 2px;
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    top: -40px;
+    left: 0;
+}
+
+
+.txt5 {
+    position: absolute;
+    top: 710px;
+    left: 630px;
+}
+
+.txt5::after {
+    content: "";
+    width: 350px;
+    height: 2px;
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    bottom: -67px;
+    left: 0;
+}
+
+.txt6 {
+    position: absolute;
+    top: 850px;
+    left: 630px;
+}
+
+.txt6::after {
+    content: "";
+    width: 350px;
+    height: 2px;
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    bottom: -47px;
+    left: 0;
+}
+
+#honbun .img .buy {
+    width: 35%;
+    position: absolute;
+    top: 1000px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 50;
+}
+
+.buy1 {
+    font-size: 40px;
+    font-weight: 900;
+    position: absolute;
+    left: 520px;
+    top: 1040px;
+    z-index: 90;
+}
+
+.buy2 {
+    font-size: 20px;
+    font-weight: 900;
+    position: absolute;
+    left: 557px;
+    top: 1095px;
+    z-index: 90;
+}
+
+@keyframes slideIn_left {
+    0% {
+      transform: translateX(-180px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+    }
+    40%,100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideIn_right {
+    0% {
+      transform: translateX(180px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+    }
+    40%,100% {
+      opacity: 1;
+    }
+  }
+
+/* フッター */
+.hutta {
+    background-image: url(../top/img/hutta_back.png),url(../top/img/hutta_kuro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    margin-top: 200px;
+}
+
+li {
+    font-size: 26px;
+}
+
+.T {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.T:hover {
+    color: #2D47DC;
+}
+
+.A {
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.A:hover {
+    color: #2D47DC;
+}
+
+.C {
+    position: absolute;
+    top: 100px;
+    left: 550px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.C:hover {
+    color: #2D47DC;
+}
+
+.M {
+    position: absolute;
+    top: 100px;
+    left: 780px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.M:hover {
+    color: #2D47DC;
+}
+
+.P {
+    position: absolute;
+    top: 100px;
+    left: 1000px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.P:hover {
+    color: #2D47DC;
+}
+
+.B {
+    position: absolute;
+    top: 300px;
+    left: 480px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.B:hover {
+    color: #2D47DC;
+}
+
+.S {
+    position: absolute;
+    top: 240px;
+    left: 780px;
+}
+
+.discode {
+    width: 6%;
+    position: absolute;
+    top: 280px;
+    left: 830px;
+    z-index: 1000;
+}
+
+.x {
+    position: absolute;
+    top: 280px;
+    left: 940px;
+    z-index: 1000;
+}
+
+.title2 {
+    width: 380px;
+    position: absolute;
+    top: 160px;
+    left: 120px;
+}

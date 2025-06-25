@@ -1,0 +1,403 @@
+body {
+    color: #fff;
+    font-family: "Yuji Mai", serif;
+    font-weight: 700;
+}
+#navi {
+    color: #000;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255,255,255,1);
+    height: 80px;
+    padding: 25px;
+    line-height: 100px;
+    z-index: 100;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+}
+
+header .navi_btn {
+    width: 50px;
+    height: 50px;
+    background-image: url(../top/img/menu.png);
+    background-size: 100%;
+    position: fixed;
+    right: 25px;
+    top: 10px;
+    z-index: 2100;
+}
+
+#navi .txt {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    top: -10px;
+    right: 220px;
+    z-index: 200;
+}
+
+#navi .txt li:hover {
+    color: #FF2C96;
+    transition: 0.5s;
+}
+
+#navi .txt p {
+    font-size: 18px;
+}
+
+
+.open {
+    opacity: 1
+    !important;
+}
+
+.close {
+    background-image: url(../top/img/close.png)
+    !important;
+}
+
+.shat {
+    opacity: 0;
+}
+
+.stop {
+    overflow: hidden;
+}
+
+/* ファーストビュー */
+
+#bg {
+    transition: 0.6s ease-in;
+    height: 2700px;
+}
+
+.bg_00 {
+    background-image: url(../charcter/img/back2.png) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+    background-attachment: fixed;
+}
+
+.bg_01 {
+    background-image: url(../charcter/img/rasu_back.png) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 2000px;
+    background-attachment: fixed;
+}
+
+.bg_02 {
+    background-image: url(../charcter/img/kotorin_back\ .png) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg_03 {
+    background-image: url(../charcter/img/inori_back.png) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg_04 {
+    background-image: url(../charcter/img/rasu_back.png) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg_05 {
+    background-image: url(../charcter/img/eiyu_back.png) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.inner-wrap {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#first .inner-wrap .txt {
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 270px;
+    text-shadow: 4px 4px 4px #000;
+}
+
+/* メイン */
+#first {
+    background-image: url(../charcter/img/mein.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+}
+
+.white {
+    width: 100%;
+    height: 2000px;
+    position: absolute;
+    z-index: 2000;
+    opacity: 1;
+    transition: ease-in-out 2.3s;
+}
+
+.white_back .white.shat {
+    opacity: 0;
+}
+
+.z-in {
+    z-index: 10;
+}
+
+/* キャラクター */
+
+.midasi {
+    padding-bottom: 150px;
+}
+.gold {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.waku {
+    position: absolute;
+    width: 40%;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 93px;
+    z-index: 1;
+}
+
+.midasi .txt h2 {
+    position: absolute;
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -98px;
+    z-index: 100;
+}
+
+#chara ul {
+    position: absolute;
+    z-index: 200;
+}
+
+#rasu {
+    position: absolute;
+    top: -50px;
+    transition: 0.5s ease;
+}
+
+#rasu:hover {
+    top: -70px;
+}
+
+#koto {
+    position: absolute;
+    top: -80px;
+    left: 260px;
+    transition: 0.5s ease;
+}
+
+#koto:hover {
+    top: -110px;
+}
+
+#ino {
+    position: absolute;
+    top: -65px;
+    left: 655px;
+    transition: 0.5s ease;
+}
+
+#ino:hover {
+    top: -80px;
+}
+
+#tak {
+    position: absolute;
+    top: -65px;
+    left:980px;
+    transition: 0.5s ease;
+}
+
+#tak:hover {
+    top: -80px;
+}
+
+#chara .cha_back {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 70px;
+    z-index: 100;
+}
+
+#eiyu {
+    margin-top: 480px;
+}
+
+#eiyu .midasi .txt p {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 50px;
+    line-height: 60px;
+}
+
+#eiyu ul {
+    position: absolute;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    gap: 80px;
+    top: 550px;
+}
+
+#chara .inner-wrap .cha .cha_img .rasu:hover {
+    background-image: url(../charcter/img/rasu_back.png);
+}
+
+/* フッター */
+.hutta {
+    background-image: url(../top/img/hutta_back.png),url(../top/img/hutta_kuro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+
+li {
+    font-size: 26px;
+}
+
+.T {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.T:hover {
+    color: #2D47DC;
+}
+
+.A {
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.A:hover {
+    color: #2D47DC;
+}
+
+.C {
+    position: absolute;
+    top: 100px;
+    left: 550px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.C:hover {
+    color: #2D47DC;
+}
+
+.M {
+    position: absolute;
+    top: 100px;
+    left: 780px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.M:hover {
+    color: #2D47DC;
+}
+
+.P {
+    position: absolute;
+    top: 100px;
+    left: 1000px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.P:hover {
+    color: #2D47DC;
+}
+
+.B {
+    position: absolute;
+    top: 300px;
+    left: 480px;
+    z-index: 1000;
+    transition: ease-in-out 0.5s;
+}
+
+.B:hover {
+    color: #2D47DC;
+}
+
+.S {
+    position: absolute;
+    top: 240px;
+    left: 780px;
+}
+
+.discode {
+    width: 6%;
+    position: absolute;
+    top: 280px;
+    left: 830px;
+    z-index: 1000;
+}
+
+.x {
+    position: absolute;
+    top: 280px;
+    left: 940px;
+    z-index: 1000;
+}
+
+.title2 {
+    width: 380px;
+    position: absolute;
+    top: 160px;
+    left: 120px;
+}
+
+.on {
+    opacity: 1 !important;
+}
+
+.off {
+    opacity: 0 !important;
+}
