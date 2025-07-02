@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 167 167">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: url(#_名称未設定グラデーション_293-2);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: url(#_名称未設定グラデーション_293-4);
+      }
+
+      .cls-3 {
+        stroke: url(#_名称未設定グラデーション_293-3);
+      }
+
+      .cls-5 {
+        fill: url(#_名称未設定グラデーション_293);
+      }
+    </style>
+    <linearGradient id="_名称未設定グラデーション_293" data-name="名称未設定グラデーション 293" x1="41.74" y1="155.83" x2="125.26" y2="11.17" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4570ff"/>
+      <stop offset="1" stop-color="#ff2c96"/>
+    </linearGradient>
+    <linearGradient id="_名称未設定グラデーション_293-2" data-name="名称未設定グラデーション 293" x1="65.47" y1="76.57" x2="90.95" y2="32.43" xlink:href="#_名称未設定グラデーション_293"/>
+    <linearGradient id="_名称未設定グラデーション_293-3" data-name="名称未設定グラデーション 293" x1="69.44" y1="107.79" x2="97.56" y2="59.08" xlink:href="#_名称未設定グラデーション_293"/>
+    <linearGradient id="_名称未設定グラデーション_293-4" data-name="名称未設定グラデーション 293" x1="61.5" y1="132.15" x2="84.33" y2="92.6" xlink:href="#_名称未設定グラデーション_293"/>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー 1">
+    <g>
+      <g>
+        <circle class="cls-4" cx="83.5" cy="83.5" r="83.5"/>
+        <path class="cls-5" d="M83.5,1c45.49,0,82.5,37.01,82.5,82.5s-37.01,82.5-82.5,82.5S1,128.99,1,83.5,38.01,1,83.5,1M83.5,0C37.38,0,0,37.38,0,83.5s37.38,83.5,83.5,83.5,83.5-37.38,83.5-83.5S129.62,0,83.5,0h0Z"/>
+      </g>
+      <g>
+        <line class="cls-1" x1="30.25" y1="54.5" x2="126.17" y2="54.5"/>
+        <line class="cls-3" x1="30.25" y1="83.44" x2="136.75" y2="83.44"/>
+        <line class="cls-2" x1="30.25" y1="112.38" x2="115.58" y2="112.38"/>
+      </g>
+    </g>
+  </g>
+</svg>
